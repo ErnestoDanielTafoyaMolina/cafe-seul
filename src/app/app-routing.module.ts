@@ -15,7 +15,7 @@ const routes: Routes = [
   { path:'register', component: RegisterComponent },
   { path:'products', component: ProductsComponent },
   { path:'chat', component: ChatComponent },
-
+// Ricardo es puto
 ];
 
 @NgModule({
