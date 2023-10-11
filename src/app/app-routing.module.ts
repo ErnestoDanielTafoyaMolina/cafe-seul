@@ -8,14 +8,16 @@ import { RegisterComponent } from './pages/register/register.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ChatComponent } from './pages/chat/chat.component';
+import { ErrorComponent } from './pages/error/error.component';
 
 const routes: Routes = [
   { path:'', component: MenuComponent },
+  { path:'**', component: ErrorComponent },
   { path:'login', component: LoginComponent },
   { path:'register', component: RegisterComponent },
   { path:'products', component: ProductsComponent },
   { path:'chat', component: ChatComponent },
-// Ricardo es puto
+// Ricardo ya no es puto
 ];
 
 @NgModule({
