@@ -12,7 +12,7 @@ import { ErrorComponent } from './pages/error/error.component';
 
 const routes: Routes = [
   { path:'', component: MenuComponent },
-  { path:'**', component: ErrorComponent },
+  { path:'error', component: ErrorComponent },
   { path:'login', component: LoginComponent },
   { path:'register', component: RegisterComponent },
   { path:'products', component: ProductsComponent },
