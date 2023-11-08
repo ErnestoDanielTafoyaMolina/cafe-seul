@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ChatComponent } from './pages/chat/chat.component';
 import { CafeproductComponent } from './components/cafeproduct/cafeproduct.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { CofeeProductsComponent } from './pages/cofee-products/cofee-products.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ErrorComponent } from './pages/error/error.component';
     FooterComponent,
     ChatComponent,
     CafeproductComponent,
-    ErrorComponent
+    ErrorComponent,
+    CofeeProductsComponent
   ],
   imports: [
     BrowserModule,

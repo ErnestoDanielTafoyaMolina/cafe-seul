@@ -9,6 +9,7 @@ import { MenuComponent } from './pages/menu/menu.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ChatComponent } from './pages/chat/chat.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { CofeeProductsComponent } from './pages/cofee-products/cofee-products.component';
 
 const routes: Routes = [
   { path:'', component: MenuComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path:'login', component: LoginComponent },
   { path:'register', component: RegisterComponent },
   { path:'products', component: ProductsComponent },
+  { path:'cofee-products', component: CofeeProductsComponent },
   { path:'chat', component: ChatComponent },
 // Ricardo ya no es puto
 ];
