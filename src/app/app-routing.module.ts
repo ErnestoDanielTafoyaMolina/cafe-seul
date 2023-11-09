@@ -13,13 +13,13 @@ import { CofeeProductsComponent } from './pages/cofee-products/cofee-products.co
 
 const routes: Routes = [
   { path:'', component: MenuComponent },
-  { path:'**', component: ErrorComponent },
+  // { path:'*', component: ErrorComponent },
   { path:'login', component: LoginComponent },
   { path:'register', component: RegisterComponent },
   { path:'products', component: ProductsComponent },
   { path:'cofee-products', component: CofeeProductsComponent },
   { path:'chat', component: ChatComponent },
-// Ricardo ya no es puto
+
 ];
 
 @NgModule({
