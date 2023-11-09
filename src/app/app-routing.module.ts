@@ -12,11 +12,11 @@ import { ErrorComponent } from './pages/error/error.component';
 
 const routes: Routes = [
   { path:'', component: MenuComponent },
-  { path:'**', component: ErrorComponent },
   { path:'login', component: LoginComponent },
   { path:'register', component: RegisterComponent },
   { path:'products', component: ProductsComponent },
   { path:'chat', component: ChatComponent },
+  { path:'**', component: ErrorComponent },
 // Ricardo ya no es puto
 ];
 
