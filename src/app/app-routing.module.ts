@@ -1,10 +1,30 @@
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+//own routes
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { MenuComponent } from './pages/menu/menu.component';
+import { ProductsComponent } from './pages/products/products.component';
+import { ChatComponent } from './pages/chat/chat.component';
+import { ErrorComponent } from './pages/error/error.component';
+
+const routes: Routes = [
+  { path:'', component: MenuComponent },
+  { path:'login', component: LoginComponent },
+  { path:'register', component: RegisterComponent },
+  { path:'products', component: ProductsComponent },
+  { path:'chat', component: ChatComponent },
+  { path:'**', component: ErrorComponent },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  declarations: [],
+  imports: [
+    CommonModule,
+    RouterModule.forRoot(routes)
+  ],
+  exports:[RouterModule]
 })
 export class AppRoutingModule { }
