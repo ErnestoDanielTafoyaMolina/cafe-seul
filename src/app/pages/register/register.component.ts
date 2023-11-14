@@ -10,7 +10,6 @@ import { FormGroup, FormControl } from '@angular/forms';
 export class RegisterComponent {
   formulario: FormGroup;
 
-  formulario: FormGroup;
   UsersService = inject(UsersService);
 
   constructor() {
