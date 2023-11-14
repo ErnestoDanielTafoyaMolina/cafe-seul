@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -12,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { ChatComponent } from './pages/chat/chat.component';
 import { CafeproductComponent } from './components/cafeproduct/cafeproduct.component';
 import { ErrorComponent } from './pages/error/error.component';
+
+
 
 @NgModule({
   declarations: [
@@ -28,6 +32,9 @@ import { ErrorComponent } from './pages/error/error.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
