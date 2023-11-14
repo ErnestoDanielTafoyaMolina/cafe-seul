@@ -1,6 +1,6 @@
+import { UsersService } from './../../services/users.service';
 import { Component, inject } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
-import { UsersService } from '../../services/users.service';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -10,8 +10,10 @@ import { UsersService } from '../../services/users.service';
 export class RegisterComponent {
   formulario: FormGroup;
 
-  usersService = inject(UsersService);
-  constructor (){
+  formulario: FormGroup;
+  UsersService = inject(UsersService);
+
+  constructor() {
     this.formulario = new FormGroup({
       username: new FormControl(),
       email: new FormControl(),
@@ -20,7 +22,8 @@ export class RegisterComponent {
   }
 
   async onSubmit(){
-    const response = await this.usersService.register(this.formulario.value);
-    console.log(response)
+    const response = await this.UsersService.register(this.formulario.value);
+    console.log(response);
   }
+
 }
